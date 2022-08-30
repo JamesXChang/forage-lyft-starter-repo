@@ -7,4 +7,4 @@ class SpindlerBattery(Battery):
         self.current_date = current_date
     
     def needs_service(self):
-        return abs(self.current_date - self.last_service_date) > timedelta(days=2*365)
+        return abs(self.current_date - self.last_service_date) > timedelta(days=3*365)
